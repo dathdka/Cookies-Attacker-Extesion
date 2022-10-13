@@ -4,14 +4,14 @@
   "version": "1.0",
   "manifest_version": 3,
   "author": "Hoang Dat",
-  "permissions": ["cookies"],
+  "permissions": ["storage","cookies"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://mail.google.com/*"],
+      "matches": ["https://mail.google.com/mail/*"],
       "js": ["content.js"]
     }
   ]
